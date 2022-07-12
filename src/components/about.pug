@@ -11,11 +11,7 @@ mixin about()
                 .swiper.swiper__thumb(thumbsSlider="")
                     .swiper-wrapper     
                         .swiper-slide 
-                            video(src="files/long-video.mp4" poster="@img/img-1.jpg" controls) 
-                        .swiper-slide 
-                            video(src="files/short-video.mp4" poster="@img/img-2.jpg" controls) 
-                        .swiper-slide 
-                            video(src="files/short-video_2.mp4" poster="@img/img-3.jpg" controls) 
+                            video(src="files/long-video.mp4" poster="@img/img-1.jpg" controls playsinline) 
                         .swiper-slide 
                             img(src="@img/lobby-2.jpg", alt="") 
                         .swiper-slide 
@@ -39,14 +35,6 @@ mixin about()
                             .play 
                                 +play-icon  
                         .swiper-slide.about__slide 
-                            img(src="@img/img-2.jpg", alt="") 
-                            .play 
-                                +play-icon 
-                        .swiper-slide.about__slide 
-                            img(src="@img/img-3.jpg", alt="") 
-                            .play 
-                                +play-icon 
-                        .swiper-slide.about__slide 
                             img(src="@img/lobby.jpg", alt="") 
                         .swiper-slide.about__slide 
                             img(src="@img/img-1.jpg", alt="") 
@@ -61,8 +49,8 @@ mixin about()
             .about__sidebar 
                 .about__sidebar-img 
                     img(src="@img/about.jpg", alt="" draggable="false")
-                p.about__sidebar-desc Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit culpa exercitationem doloremque! Sit debitis, est rem repellendus sapiente in delectus dignissimos libero perspiciatis, quae aut!
-                .intro__links 
+                p.about__sidebar-desc Приглашаем поучаствовать в ранних тестах игры и понаблюдать за разработкой проекта с самого начала!<br><br>Если Heroes of Might and Magic 3 и Final Fantasy вызывают острый приступ ностальгии - вступайте в телеграм-канал, задавайте вопросы в чате игроков, будем рады вас видеть!<br><br>Классическая тактика в стиле старых игр. Правильность ходов, формирование отряда и синергия юнитов приведут к победе!
+                .intro__links  
                     a(href="#!" anim="ripple").intro__button Установить 
                     a(href="https://t.me/fantasy_hearts/223" rel="noreferrer" target="_blank").intro__soc 
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
